@@ -13,18 +13,20 @@ set incsearch
 set wrapscan
 set hlsearch
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
+map <C-n> :NERDTreeToggle<CR>
+
 
 
 "NeoBundle Scripts-----------------------------
 if &compatible
-  set nocompatible               " Be iMproved
+		  set nocompatible               " Be iMproved
 endif
 
 " Required:
-set runtimepath^=/home/koumoto/.vim/bundle/neobundle.vim/
+set runtimepath+=~/.vim/bundle/neobundle.vim/
 
 " Required:
-call neobundle#begin(expand('/home/koumoto/.vim/bundle'))
+call neobundle#begin(expand('~/.vim/bundle'))
 
 " Let NeoBundle manage NeoBundle
 " Required:
@@ -36,6 +38,8 @@ NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
+NeoBundle 'scrooloose/nerdtree'
+
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
