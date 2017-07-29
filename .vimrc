@@ -1,5 +1,19 @@
 syntax on
 set nu
+set cursorline
+set smartindent
+set laststatus=2
+set wildmode=list:longest
+nnoremap j gj
+nnoremap k gk
+set list listchars=tab:\>\-
+set tabstop=4
+set ignorecase
+set incsearch
+set wrapscan
+set hlsearch
+nmap <Esc><Esc> :nohlsearch<CR><Esc>
+
 
 "NeoBundle Scripts-----------------------------
 if &compatible
